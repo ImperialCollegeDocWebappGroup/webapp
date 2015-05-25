@@ -1,18 +1,20 @@
 //
-//  LoginVCViewController.swift
+//  SignupVC.swift
 //  webapp
 //
-//  Created by Shan, Jinyi on 25/05/2015.
+//  Created by Jiahao Lin on 25/05/2015.
 //  Copyright (c) 2015 Shan, Jinyi. All rights reserved.
 //
 
 import UIKit
 
-class LoginVCViewController: UIViewController {
+class SignupVC: UIViewController {
 
     @IBOutlet weak var txtUsername: UITextField!
     
     @IBOutlet weak var txtPassword: UITextField!
+    
+    @IBOutlet weak var txtConfirmPassword: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,26 +28,34 @@ class LoginVCViewController: UIViewController {
     }
     
 
-    @IBAction func signinTapped(sender: UIButton) {
-        // Authentication Code
-        var username:NSString = txtUsername.text
-        var password:NSString = txtPassword.text
+    @IBAction func signupTapped(sender: AnyObject) {
+        var username:NSString = txtUsername.text as NSString
+        var password:NSString = txtPassword.text as NSString
+        var confirm_password:NSString = txtConfirmPassword.text as NSString
         
         if ( username.isEqualToString("") || password.isEqualToString("") ) {
             
             var alertView:UIAlertView = UIAlertView()
-            alertView.title = "Sign in Failed!"
+            alertView.title = "Sign Up Failed!"
             alertView.message = "Please enter Username and Password"
+            alertView.delegate = self
+            alertView.addButtonWithTitle("OK")
+            alertView.show()
+        } else if ( !password.isEqual(confirm_password) ) {
+            
+            var alertView:UIAlertView = UIAlertView()
+            alertView.title = "Sign Up Failed!"
+            alertView.message = "Passwords doesn't Match"
             alertView.delegate = self
             alertView.addButtonWithTitle("OK")
             alertView.show()
         } else {
             
-            var post:NSString = "username=\(username)&password=\(password)"
+            var post:NSString = "username=\(username)&password=\(password)&c_password=\(confirm_password)"
             
             NSLog("PostData: %@",post);
             
-            var url:NSURL = NSURL(string: "https://dipinkrishna.com/jsonlogin2.php")!
+            var url:NSURL = NSURL(string: "https://dipinkrishna.com/jsonsignup.php")!
             
             var postData:NSData = post.dataUsingEncoding(NSASCIIStringEncoding)!
             
@@ -88,13 +98,7 @@ class LoginVCViewController: UIViewController {
                     
                     if(success == 1)
                     {
-                        NSLog("Login SUCCESS");
-                        
-                        var prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-                        prefs.setObject(username, forKey: "USERNAME")
-                        prefs.setInteger(1, forKey: "ISLOGGEDIN")
-                        prefs.synchronize()
-                        
+                        NSLog("Sign Up SUCCESS");
                         self.dismissViewControllerAnimated(true, completion: nil)
                     } else {
                         var error_msg:NSString
@@ -105,7 +109,7 @@ class LoginVCViewController: UIViewController {
                             error_msg = "Unknown Error"
                         }
                         var alertView:UIAlertView = UIAlertView()
-                        alertView.title = "Sign in Failed!"
+                        alertView.title = "Sign Up Failed!"
                         alertView.message = error_msg as String
                         alertView.delegate = self
                         alertView.addButtonWithTitle("OK")
@@ -115,13 +119,13 @@ class LoginVCViewController: UIViewController {
                     
                 } else {
                     var alertView:UIAlertView = UIAlertView()
-                    alertView.title = "Sign in Failed!"
+                    alertView.title = "Sign Up Failed!"
                     alertView.message = "Connection Failed"
                     alertView.delegate = self
                     alertView.addButtonWithTitle("OK")
                     alertView.show()
                 }
-            } else {
+            }  else {
                 var alertView:UIAlertView = UIAlertView()
                 alertView.title = "Sign in Failed!"
                 alertView.message = "Connection Failure"
@@ -133,8 +137,14 @@ class LoginVCViewController: UIViewController {
                 alertView.show()
             }
         }
+        
     }
     
+    
+    @IBAction func gotoLogin(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    
+    }
     /*
     // MARK: - Navigation
 
