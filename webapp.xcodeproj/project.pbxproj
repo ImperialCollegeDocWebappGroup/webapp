@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18E402581B13634800AB9ADD /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E402571B13634800AB9ADD /* SignupVC.swift */; };
 		365A51071B133805005C2E92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A51061B133805005C2E92 /* AppDelegate.swift */; };
 		365A51091B133805005C2E92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A51081B133805005C2E92 /* ViewController.swift */; };
 		365A510C1B133805005C2E92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365A510A1B133805005C2E92 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18E402571B13634800AB9ADD /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		365A51011B133805005C2E92 /* webapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		365A51051B133805005C2E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		365A51061B133805005C2E92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				365A510F1B133805005C2E92 /* LaunchScreen.xib */,
 				365A51041B133805005C2E92 /* Supporting Files */,
 				365A51261B134D89005C2E92 /* LoginVCViewController.swift */,
+				18E402571B13634800AB9ADD /* SignupVC.swift */,
 			);
 			path = webapp;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E402581B13634800AB9ADD /* SignupVC.swift in Sources */,
 				365A51091B133805005C2E92 /* ViewController.swift in Sources */,
 				365A51071B133805005C2E92 /* AppDelegate.swift in Sources */,
 				365A51271B134D89005C2E92 /* LoginVCViewController.swift in Sources */,
@@ -409,6 +413,7 @@
 				365A51221B133805005C2E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		365A51231B133805005C2E92 /* Build configuration list for PBXNativeTarget "webappTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				365A51251B133805005C2E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
