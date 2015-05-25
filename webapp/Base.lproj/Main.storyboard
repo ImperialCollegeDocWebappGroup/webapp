@@ -45,7 +45,7 @@
             <objects>
                 <viewController id="Tgx-im-fpw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DSL-KJ-hcF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Mh-21-wsL">
@@ -101,7 +101,7 @@
             <objects>
                 <viewController id="WlX-Fq-MUz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KPo-m6-ofg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up Now" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jnt-85-Qqr">
@@ -183,6 +183,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="pnD-SO-teM"/>
+        <segue reference="07U-up-CAh"/>
     </inferredMetricsTieBreakers>
 </document>
