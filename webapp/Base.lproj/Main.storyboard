@@ -38,12 +38,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uyj-ZX-gmx">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.52848724542250736" green="0.85769118390314603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="HOME PAGE" id="sUb-97-eZB"/>
                     <connections>
-                        <outlet property="usernameLabel" destination="Ziq-og-tJQ" id="RyD-Ln-OwQ"/>
+                        <outlet property="usernameLabel" destination="Uyj-ZX-gmx" id="BzJ-KM-w6r"/>
                         <segue destination="Tgx-im-fpw" kind="modal" identifier="goto_login" id="07U-up-CAh"/>
                     </connections>
                 </viewController>
