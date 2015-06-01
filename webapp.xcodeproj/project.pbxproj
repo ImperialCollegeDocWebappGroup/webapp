@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		189263C11B1C7F6F0025DE1F /* HTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189263BE1B1C7F6F0025DE1F /* HTMLNode.swift */; };
+		189263C21B1C7F6F0025DE1F /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189263BF1B1C7F6F0025DE1F /* HTMLParser.swift */; };
+		189263C41B1C804D0025DE1F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 189263C31B1C804D0025DE1F /* libxml2.dylib */; };
 		18E402581B13634800AB9ADD /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E402571B13634800AB9ADD /* SignupVC.swift */; };
 		365A51071B133805005C2E92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A51061B133805005C2E92 /* AppDelegate.swift */; };
 		365A51091B133805005C2E92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A51081B133805005C2E92 /* ViewController.swift */; };
@@ -28,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		189263BE1B1C7F6F0025DE1F /* HTMLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTMLNode.swift; path = "../../Swift-HTML-Parser/Swift-HTML-Parser/HTMLNode.swift"; sourceTree = "<group>"; };
+		189263BF1B1C7F6F0025DE1F /* HTMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTMLParser.swift; path = "../../Swift-HTML-Parser/Swift-HTML-Parser/HTMLParser.swift"; sourceTree = "<group>"; };
+		189263C01B1C7F6F0025DE1F /* Swift-HTML-Parser-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Swift-HTML-Parser-Bridging-Header.h"; path = "../../Swift-HTML-Parser/Swift-HTML-Parser/Swift-HTML-Parser-Bridging-Header.h"; sourceTree = "<group>"; };
+		189263C31B1C804D0025DE1F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		18E402571B13634800AB9ADD /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		365A51011B133805005C2E92 /* webapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		365A51051B133805005C2E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189263C41B1C804D0025DE1F /* libxml2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,7 @@
 		365A50F81B133804005C2E92 = {
 			isa = PBXGroup;
 			children = (
+				189263C31B1C804D0025DE1F /* libxml2.dylib */,
 				365A51031B133805005C2E92 /* webapp */,
 				365A51191B133805005C2E92 /* webappTests */,
 				365A51021B133805005C2E92 /* Products */,
@@ -81,6 +90,9 @@
 		365A51031B133805005C2E92 /* webapp */ = {
 			isa = PBXGroup;
 			children = (
+				189263BE1B1C7F6F0025DE1F /* HTMLNode.swift */,
+				189263BF1B1C7F6F0025DE1F /* HTMLParser.swift */,
+				189263C01B1C7F6F0025DE1F /* Swift-HTML-Parser-Bridging-Header.h */,
 				365A51061B133805005C2E92 /* AppDelegate.swift */,
 				365A51081B133805005C2E92 /* ViewController.swift */,
 				365A510A1B133805005C2E92 /* Main.storyboard */,
@@ -221,6 +233,8 @@
 				18E402581B13634800AB9ADD /* SignupVC.swift in Sources */,
 				365A51091B133805005C2E92 /* ViewController.swift in Sources */,
 				365A51071B133805005C2E92 /* AppDelegate.swift in Sources */,
+				189263C21B1C7F6F0025DE1F /* HTMLParser.swift in Sources */,
+				189263C11B1C7F6F0025DE1F /* HTMLNode.swift in Sources */,
 				365A51271B134D89005C2E92 /* LoginVCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,10 +362,11 @@
 					"$(inherited)",
 					/Users/jiahaolin/Documents/FacebookSDK,
 				);
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = webapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "webapp/Swift-HTML-Parser-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -363,10 +378,11 @@
 					"$(inherited)",
 					/Users/jiahaolin/Documents/FacebookSDK,
 				);
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = webapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "webapp/Swift-HTML-Parser-Bridging-Header.h";
 			};
 			name = Release;
 		};
