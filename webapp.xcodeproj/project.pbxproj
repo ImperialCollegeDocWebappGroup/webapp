@@ -11,6 +11,7 @@
 		1846BAC51B1E768300FEA88E /* SettingModelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1846BAC41B1E768300FEA88E /* SettingModelVC.swift */; };
 		1846BAC91B1E788B00FEA88E /* MainFeaturesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1846BAC81B1E788B00FEA88E /* MainFeaturesVC.swift */; };
 		186B81CF1B1F182200C3DD9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186B81CE1B1F182200C3DD9B /* Images.xcassets */; };
+		186B81D31B1F81E700C3DD9B /* LoadImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B81D21B1F81E700C3DD9B /* LoadImageVC.swift */; };
 		189263C11B1C7F6F0025DE1F /* HTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189263BE1B1C7F6F0025DE1F /* HTMLNode.swift */; };
 		189263C21B1C7F6F0025DE1F /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189263BF1B1C7F6F0025DE1F /* HTMLParser.swift */; };
 		189263C41B1C804D0025DE1F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 189263C31B1C804D0025DE1F /* libxml2.dylib */; };
@@ -38,6 +39,7 @@
 		1846BAC41B1E768300FEA88E /* SettingModelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingModelVC.swift; sourceTree = "<group>"; };
 		1846BAC81B1E788B00FEA88E /* MainFeaturesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeaturesVC.swift; sourceTree = "<group>"; };
 		186B81CE1B1F182200C3DD9B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		186B81D21B1F81E700C3DD9B /* LoadImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadImageVC.swift; sourceTree = "<group>"; };
 		189263BE1B1C7F6F0025DE1F /* HTMLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTMLNode.swift; path = "../../Swift-HTML-Parser/Swift-HTML-Parser/HTMLNode.swift"; sourceTree = "<group>"; };
 		189263BF1B1C7F6F0025DE1F /* HTMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTMLParser.swift; path = "../../Swift-HTML-Parser/Swift-HTML-Parser/HTMLParser.swift"; sourceTree = "<group>"; };
 		189263C01B1C7F6F0025DE1F /* Swift-HTML-Parser-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Swift-HTML-Parser-Bridging-Header.h"; path = "../../Swift-HTML-Parser/Swift-HTML-Parser/Swift-HTML-Parser-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				1846BAC81B1E788B00FEA88E /* MainFeaturesVC.swift */,
 				1846BAC01B1E75FE00FEA88E /* FirstTimeEntryVC.swift */,
 				1846BAC41B1E768300FEA88E /* SettingModelVC.swift */,
+				186B81D21B1F81E700C3DD9B /* LoadImageVC.swift */,
 			);
 			path = webapp;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			files = (
 				18E402581B13634800AB9ADD /* SignupVC.swift in Sources */,
 				1846BAC91B1E788B00FEA88E /* MainFeaturesVC.swift in Sources */,
+				186B81D31B1F81E700C3DD9B /* LoadImageVC.swift in Sources */,
 				365A51091B133805005C2E92 /* ViewController.swift in Sources */,
 				365A51071B133805005C2E92 /* AppDelegate.swift in Sources */,
 				189263C21B1C7F6F0025DE1F /* HTMLParser.swift in Sources */,
