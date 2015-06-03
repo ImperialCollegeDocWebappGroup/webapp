@@ -23,16 +23,41 @@ class SettingModelVC: UIViewController {
         // pop up message
         
     }
-   
+    
     @IBAction func MaleTapped(sender: UIButton) {
+        sender.selected = true
         maleUser = true
-        sender.setImage(<#image: UIImage?#>, forState: <#UIControlState#>)
+        selectGender(sender)
+        deselectGender(FemaleButt)
     }
     
     @IBAction func FemaleTapped(sender: UIButton) {
+        sender.selected = true
         maleUser = false
-        
+        selectGender(sender)
+        deselectGender(MaleButt)
     }
+    
+    func selectGender(butt: UIButton) {
+        if butt == MaleButt {
+            butt.setImage(UIImage(named: "colour1"), forState: .Selected)
+        } else {
+            butt.setImage(UIImage(named: "colour2"),
+                forState: .Selected)
+        }
+    }
+    
+    func deselectGender(butt: UIButton) {
+        butt.selected = false
+        if butt == MaleButt {
+            butt.setImage(UIImage(named: "black1"), forState: .Normal)
+        } else {
+            butt.setImage(UIImage(named: "black2"),
+                forState: .Normal)
+        }
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
