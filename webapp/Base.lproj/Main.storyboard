@@ -310,7 +310,6 @@
                                 <connections>
                                     <action selector="SaveModelButton:" destination="1Ty-56-PsZ" eventType="touchUpInside" id="Aor-ck-x0m"/>
                                     <action selector="SaveModelTapped:" destination="1Ty-56-PsZ" eventType="touchUpInside" id="YtP-wr-6fx"/>
-                                    <segue destination="2Kn-XS-Z1j" kind="modal" identifier="goto_setting" id="rn4-c3-Ufd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tsN-t2-mJC">
@@ -335,6 +334,7 @@
                         <outlet property="SkinColourSlider" destination="8QJ-TB-pwz" id="CoM-z1-iqh"/>
                         <outlet property="txtHeight" destination="nMQ-Ha-JQ0" id="fc1-TQ-L0K"/>
                         <outlet property="txtWeight" destination="kWB-2l-0M2" id="Bjn-ZO-sln"/>
+                        <segue destination="2Kn-XS-Z1j" kind="modal" identifier="goto_room" id="VTd-ga-wCg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nMb-OM-UXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -381,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hU4-ZW-Yac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1505" y="911"/>
+            <point key="canvasLocation" x="1682" y="613"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cig-n3-Vu6">
@@ -414,6 +414,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="rn4-c3-Ufd"/>
+        <segue reference="VTd-ga-wCg"/>
     </inferredMetricsTieBreakers>
 </document>
