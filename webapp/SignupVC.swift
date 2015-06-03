@@ -99,7 +99,8 @@ class SignupVC: UIViewController {
                     if(success == 1)
                     {
                         NSLog("Sign Up SUCCESS");
-                        self.dismissViewControllerAnimated(true, completion: nil)
+                        self.performSegueWithIdentifier("goto_entry", sender: self)
+                        //self.dismissViewControllerAnimated(true, completion: nil)
                     } else {
                         var error_msg:NSString
                         

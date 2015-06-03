@@ -95,7 +95,7 @@ class LoginVCViewController: UIViewController {
                         prefs.setInteger(1, forKey: "ISLOGGEDIN")
                         prefs.synchronize()
                         
-                        self.dismissViewControllerAnimated(true, completion: nil)
+                       self.dismissViewControllerAnimated(true, completion: nil)
                     } else {
                         var error_msg:NSString
                         

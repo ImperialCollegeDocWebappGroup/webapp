@@ -41,5 +41,8 @@ import UIKit
         self.performSegueWithIdentifier("goto_login", sender: self)
     }
 
+    @IBAction func goPressed(sender: UIButton) {
+        self.performSegueWithIdentifier("goto_room", sender: self)
+    }
 }
 
