@@ -10,11 +10,11 @@
 		1846BAC11B1E75FE00FEA88E /* FirstTimeEntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1846BAC01B1E75FE00FEA88E /* FirstTimeEntryVC.swift */; };
 		1846BAC51B1E768300FEA88E /* SettingModelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1846BAC41B1E768300FEA88E /* SettingModelVC.swift */; };
 		1846BAC91B1E788B00FEA88E /* MainFeaturesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1846BAC81B1E788B00FEA88E /* MainFeaturesVC.swift */; };
-		186B81CF1B1F182200C3DD9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186B81CE1B1F182200C3DD9B /* Images.xcassets */; };
 		186B81D31B1F81E700C3DD9B /* LoadImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B81D21B1F81E700C3DD9B /* LoadImageVC.swift */; };
-		189263C11B1C7F6F0025DE1F /* HTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189263BE1B1C7F6F0025DE1F /* HTMLNode.swift */; };
-		189263C21B1C7F6F0025DE1F /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189263BF1B1C7F6F0025DE1F /* HTMLParser.swift */; };
-		189263C41B1C804D0025DE1F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 189263C31B1C804D0025DE1F /* libxml2.dylib */; };
+		186B81D51B1F9C1000C3DD9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186B81D41B1F9C1000C3DD9B /* Images.xcassets */; };
+		186B81D91B206CAC00C3DD9B /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B81D61B206CAC00C3DD9B /* ysocket.swift */; };
+		186B81DA1B206CAC00C3DD9B /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 186B81D71B206CAC00C3DD9B /* ytcpsocket.c */; };
+		186B81DB1B206CAC00C3DD9B /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B81D81B206CAC00C3DD9B /* ytcpsocket.swift */; };
 		18E402581B13634800AB9ADD /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E402571B13634800AB9ADD /* SignupVC.swift */; };
 		365A51071B133805005C2E92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A51061B133805005C2E92 /* AppDelegate.swift */; };
 		365A51091B133805005C2E92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A51081B133805005C2E92 /* ViewController.swift */; };
@@ -38,12 +38,11 @@
 		1846BAC01B1E75FE00FEA88E /* FirstTimeEntryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTimeEntryVC.swift; sourceTree = "<group>"; };
 		1846BAC41B1E768300FEA88E /* SettingModelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingModelVC.swift; sourceTree = "<group>"; };
 		1846BAC81B1E788B00FEA88E /* MainFeaturesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeaturesVC.swift; sourceTree = "<group>"; };
-		186B81CE1B1F182200C3DD9B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		186B81D21B1F81E700C3DD9B /* LoadImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadImageVC.swift; sourceTree = "<group>"; };
-		189263BE1B1C7F6F0025DE1F /* HTMLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTMLNode.swift; path = "../../Swift-HTML-Parser/Swift-HTML-Parser/HTMLNode.swift"; sourceTree = "<group>"; };
-		189263BF1B1C7F6F0025DE1F /* HTMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTMLParser.swift; path = "../../Swift-HTML-Parser/Swift-HTML-Parser/HTMLParser.swift"; sourceTree = "<group>"; };
-		189263C01B1C7F6F0025DE1F /* Swift-HTML-Parser-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Swift-HTML-Parser-Bridging-Header.h"; path = "../../Swift-HTML-Parser/Swift-HTML-Parser/Swift-HTML-Parser-Bridging-Header.h"; sourceTree = "<group>"; };
-		189263C31B1C804D0025DE1F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		186B81D41B1F9C1000C3DD9B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		186B81D61B206CAC00C3DD9B /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
+		186B81D71B206CAC00C3DD9B /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
+		186B81D81B206CAC00C3DD9B /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
 		18E402571B13634800AB9ADD /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		365A51011B133805005C2E92 /* webapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		365A51051B133805005C2E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				189263C41B1C804D0025DE1F /* libxml2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +77,6 @@
 		365A50F81B133804005C2E92 = {
 			isa = PBXGroup;
 			children = (
-				189263C31B1C804D0025DE1F /* libxml2.dylib */,
 				365A51031B133805005C2E92 /* webapp */,
 				365A51191B133805005C2E92 /* webappTests */,
 				365A51021B133805005C2E92 /* Products */,
@@ -98,12 +95,12 @@
 		365A51031B133805005C2E92 /* webapp */ = {
 			isa = PBXGroup;
 			children = (
-				186B81CE1B1F182200C3DD9B /* Images.xcassets */,
-				189263BE1B1C7F6F0025DE1F /* HTMLNode.swift */,
-				189263BF1B1C7F6F0025DE1F /* HTMLParser.swift */,
-				189263C01B1C7F6F0025DE1F /* Swift-HTML-Parser-Bridging-Header.h */,
+				186B81D41B1F9C1000C3DD9B /* Images.xcassets */,
 				365A51061B133805005C2E92 /* AppDelegate.swift */,
 				365A51081B133805005C2E92 /* ViewController.swift */,
+				186B81D61B206CAC00C3DD9B /* ysocket.swift */,
+				186B81D71B206CAC00C3DD9B /* ytcpsocket.c */,
+				186B81D81B206CAC00C3DD9B /* ytcpsocket.swift */,
 				365A510A1B133805005C2E92 /* Main.storyboard */,
 				365A510F1B133805005C2E92 /* LaunchScreen.xib */,
 				365A51041B133805005C2E92 /* Supporting Files */,
@@ -222,7 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				186B81CF1B1F182200C3DD9B /* Images.xcassets in Resources */,
+				186B81D51B1F9C1000C3DD9B /* Images.xcassets in Resources */,
 				365A510C1B133805005C2E92 /* Main.storyboard in Resources */,
 				365A51111B133805005C2E92 /* LaunchScreen.xib in Resources */,
 			);
@@ -247,11 +244,12 @@
 				186B81D31B1F81E700C3DD9B /* LoadImageVC.swift in Sources */,
 				365A51091B133805005C2E92 /* ViewController.swift in Sources */,
 				365A51071B133805005C2E92 /* AppDelegate.swift in Sources */,
-				189263C21B1C7F6F0025DE1F /* HTMLParser.swift in Sources */,
-				189263C11B1C7F6F0025DE1F /* HTMLNode.swift in Sources */,
+				186B81D91B206CAC00C3DD9B /* ysocket.swift in Sources */,
 				1846BAC11B1E75FE00FEA88E /* FirstTimeEntryVC.swift in Sources */,
 				365A51271B134D89005C2E92 /* LoginVCViewController.swift in Sources */,
+				186B81DA1B206CAC00C3DD9B /* ytcpsocket.c in Sources */,
 				1846BAC51B1E768300FEA88E /* SettingModelVC.swift in Sources */,
+				186B81DB1B206CAC00C3DD9B /* ytcpsocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +380,7 @@
 				INFOPLIST_FILE = webapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "webapp/Swift-HTML-Parser-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -398,7 +396,7 @@
 				INFOPLIST_FILE = webapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "webapp/Swift-HTML-Parser-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

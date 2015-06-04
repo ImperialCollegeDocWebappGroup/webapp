@@ -46,14 +46,23 @@ class LoadImageVC: UIViewController {
         /*
         var realURL: String = "http://www.selfridges.com/en/ralph-lauren-new-fit-bi-swing-windbreaker-jacket_434-88064526-A30J4030Y3177/?previewAttribute=Rl+black"
 */
+        var error_msg: String = ""
+        var invalidURL: Bool = false
         var realURL: String = txtURL.text!
         if let myURL = NSURL(string: realURL) {
             var error: NSError?
             var myHTMLString = NSString(contentsOfURL: myURL, encoding: NSUTF8StringEncoding, error: &error)
             
             if let error = error {
+                invalidURL = true
+                error_msg = "Your URL is not valid"
                 println("Error : \(error)")
             } else {
+                // check the url is from selfridges.com
+                if realURL.rangeOfString("selfridges") == nil {
+                    invalidURL = true
+                    error_msg = "URL is not from selfridges.com"
+                } else {
                 //  println("HTML : \(myHTMLString)")
                 println("success")
                 
@@ -86,9 +95,11 @@ class LoadImageVC: UIViewController {
                 println(altResult5!)
                 
                 imageUrl = altResult5! as String
-                
+                }
             }
         } else {
+            invalidURL = true
+            error_msg = "Invalid URL."
             println("Error: \(realURL) doesn't seem to be a valid URL")
         }
         /*
@@ -112,6 +123,15 @@ class LoadImageVC: UIViewController {
         if let data = NSData(contentsOfURL: url!) {
             imageURL.image = UIImage(data: data)
         } else {
+            invalidURL = true
+        }
+        
+        if invalidURL {
+            var invalidURLAlert = UIAlertController(title: "Invalid URL", message: error_msg as String, preferredStyle: .Alert )
+            
+            invalidURLAlert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: nil))
+            
+            self.presentViewController(invalidURLAlert, animated: true, completion: nil)
             imageURL.image = image2
         }
     }

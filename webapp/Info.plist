@@ -13,10 +13,6 @@
 			</array>
 		</dict>
 	</array>
-	<key>FacebookDisplayName</key>
-	<string>ic</string>
-	<key>FacebookAppID</key>
-	<string>368862666657227</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
